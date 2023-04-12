@@ -1,15 +1,14 @@
 # Django-App-Deployment
 **DevOps Project of Django App Deployment on EC2 using Docker and Jenkins.**
 
+![todo App](https://raw.githubusercontent.com/shreys7/django-todo/develop/staticfiles/todoApp.png)
+
 ## Resources &Technology Used
 1. AWS Free Tier Account
 2. EC2 Instance : t2 micro 
 3. Django Todo App 
 3. Docker Image
 4. Jenkins 
-
-## Project Flow
-![This is an image](https://github.com/amitgitz/Django-App-Deployment/blob/Jenkins_Deployment/Project-Flow.svg)
 
 ## Step 1 : Running the App Locally
 Before deploying the app on EC2 Instance , we will test run the app locally.
