@@ -4,16 +4,13 @@ A simple todo app built with django
 Resources &Technology Used :
 
 1.AWS Free Tier Account
-
 2.EC2 Instance : t2 micro
-
 3.Django Todo App
-
 4.Docker Image
-
 5.Jenkins
-
 6.Git and GitHub
+
+
 
 
 
