@@ -1,4 +1,4 @@
-# Django-App-Deployment
+# Django-todo-cicd
 **DevOps Project of Django App Deployment on EC2 using Docker and Jenkins.**
 
 ![todo App](https://raw.githubusercontent.com/shreys7/django-todo/develop/staticfiles/todoApp.png)
