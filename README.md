@@ -1,38 +1,34 @@
 # django-todo
 A simple todo app built with django
 
-![todo App](https://raw.githubusercontent.com/shreys7/django-todo/develop/staticfiles/todoApp.png)
-### Setup
-To get this repository, run the following command inside your git enabled terminal
-```bash
-$ git clone https://github.com/shreys7/django-todo.git
-```
-You will need django to be installed in you computer to run this app. Head over to https://www.djangoproject.com/download/ for the download guide
+Resources &Technology Used :
 
-Once you have downloaded django, go to the cloned repo directory and run the following command
+1.AWS Free Tier Account
+2.EC2 Instance : t2 micro
+3.Django Todo App
+4.Docker Image
+5.Jenkins
+6.Git and GitHub
 
-```bash
-$ python manage.py makemigrations
-```
 
-This will create all the migrations file (database migrations) required to run this App.
 
-Now, to apply this migrations run the following command
-```bash
-$ python manage.py migrate
-```
+Step 1: Set up of AWS EC2 instance
 
-One last step and then our todo App will be live. We need to create an admin user to run this App. On the terminal, type the following command and provide username, password and email for the admin user
-```bash
-$ python manage.py createsuperuser
-```
+1.Create the ec2 instance with following details
+2.Name : Jenkins cicd
+3.AMI : Ubuntu 20.04 LTS
+4.Key Pair : todo-app
+5.SG : Allowing SSH at Port 22
 
-That was pretty simple, right? Now let's make the App live. We just need to start the server now and then we can start using our simple todo App. Start the server by following command
+Make connection with EC2 Instance using Terminal with the help of key pair
 
-```bash
-$ python manage.py runserver
-```
+Now we are on EC2 instance. So create a new directory named Projects
 
-Once the server is hosted, head over to http://127.0.0.1:8000/todos for the App.
+mkdir projects
 
-Cheers and Happy Coding :)
+Now change directory to the newly created directory using cd command
+
+cd projects
+
+clone the django todo app repo in the project directory
+
