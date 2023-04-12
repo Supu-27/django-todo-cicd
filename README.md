@@ -3,7 +3,7 @@
 
 ![todo App](https://raw.githubusercontent.com/shreys7/django-todo/develop/staticfiles/todoApp.png)
 
-## Resources &Technology Used
+## Resources & Technology Used
 1. AWS Free Tier Account
 2. EC2 Instance : t2 micro 
 3. Django Todo App 
@@ -59,9 +59,9 @@ We will requirement.txt file to freeze the dependencies requried to run the appl
  
 ## step 3 : Set up  of AWS EC2 instance
 1. Create the ec2 instance with following details
-2. Name : Django-Application
-3. AMI : Ubuntu 18 LTS
-4. Key Pair : Lap_Connect
+2. Name : Django-project
+3. AMI : Ubuntu 20.04 LTS
+4. Key Pair : Django
 5. SG : Allowing SSH at Port 22
 
 Make connection with EC2 Instance using git bash CLI with the help of key pair 
@@ -104,7 +104,7 @@ COPY . .
 
 RUN python manage.py migrate
 
-
+EXPOSE 8001
 CMD ["python","manage.py","runserver","0.0.0.0:8001"]
 
 ```
@@ -121,7 +121,7 @@ sudo docker run -p 8001:8001 62761281ad8f
 ```
 
 Now go to your browser and copy your public IP and use it to check if the app is running as shown in screenshot
-enter your public IP:8001. example : 5.88.168.176:8001
+enter your public IP:8001. example : (http://44.203.162.103:8001)
 
 
 
@@ -165,11 +165,9 @@ Click install suggested plugin and go ahead ith the installation
 
 
 create and setup your admin user and your are done. You must be on the Jenkins homepage now
+ 
 
-
-Open your terminal and add jenkins to sudoers s shon in the screen shot so that when we build our job in jenkins it can have sudo access
-   sudo visudo
-use above command to open the file and then add jenkins like this
+![image](https://user-images.githubusercontent.com/125067454/231465420-70498eb1-c961-4a71-89c6-5ab867e50d03.png)
 
 
 
@@ -178,9 +176,9 @@ create a new GitHub repository with name you want.
 
 copy the repository url, now go back to instance terminal and change the remote repository to your new repository
 
-   git remote set-url origin https://github.com/amitgitz/jenkins-Deployment-projects.git
+   git remote set-url origin https://github.com/Supu-27/django-todo-cicd.git
    
-Add ll files to staged
+Add All files to staged
 ```
    git add .
    ```
