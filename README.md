@@ -165,9 +165,7 @@ Click install suggested plugin and go ahead ith the installation
 
 
 create and setup your admin user and your are done. You must be on the Jenkins homepage now
- 
 
-![image](https://user-images.githubusercontent.com/125067454/231465420-70498eb1-c961-4a71-89c6-5ab867e50d03.png)
 
 
 
